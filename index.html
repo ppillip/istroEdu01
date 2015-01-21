@@ -1,18 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
 
-    <script src="./data.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="http://underscorejs.org/underscore-min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="./index.js"></script>
+    <!DOCTYPE html>
+    <html>
+        <head>
 
-    <title>우리의 첫번째 html 화일 입니다.</title>
-</head>
-<body>
+            <meta charset="utf-8">
 
-</body>
-</html>
+            <title>처음으로 해보는 리스트</title>
+
+            <script src="http://jashkenas.github.io/underscore/underscore-min.js"></script>
+
+            <script src="http://code.jquery.com/jquery.min.js"></script>
+
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+            <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+                  rel="stylesheet" type="text/css" />
+
+            <script src="./data.js"></script>
+
+            <script src="./index.js"></script>
+
+        </head>
+
+        <body>
+
+        <div name="inputArea" class="well">
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="_id" placeholder="_id">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="이름">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="age" placeholder="나이">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="phone" placeholder="전화번호">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="company" placeholder="회사">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="birthday" placeholder="생일">
+            </div>
+            <p><button class="btn btn-sm btn-primary" name="save"><i class="glyphicon glyphicon-search"></i> 저장</button></p>
+
+        </div>
+
+        <div name="listArea" class="well">
+
+            <p><button class="btn btn-sm btn-primary" name="listRender"><i class="glyphicon glyphicon-search"></i> 조회</button></p>
+
+            <table name="table01" class="table table-bordered table-condensed table-hover table-striped">
+                <thead>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>이메일</th>
+                    <th>전화번호</th>
+                    <th>회사</th>
+                    <th>생년월일</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+
+        </body>
+
+    </html>
+
+
+
